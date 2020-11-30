@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
     <title>Hello</title>
+    <script>
+        function hello(){
+            const heading = document.querySelector('h1');
+            if(heading.innerHTML === 'Hello!'){
+                document.querySelector('h1').innerHTML = 'Goodbye!';
+            }
+            else{
+                heading.innerHTML = 'Hello!';
+            }
+           
+        }
+    </script>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <h1>Jello!</h1>
+    <button onclick="hello()">Click Here</button>
 </body>
 </html>
